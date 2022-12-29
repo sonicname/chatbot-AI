@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "commonjs",
+    "rootDir": "./src",
+    "baseUrl": "./src",
+    "paths": {
+      "@abstractions/*": ["abstractions/*"],
+      "@controllers/*": ["controllers/*"],
+      "@middlewares/*": ["middlewares/*"],
+      "@exceptions/*": ["exceptions/*"],
+      "@models/*": ["models/*"],
+      "@utils/*": ["utils/*"]
+    },
+    "outDir": "./build",
+    "removeComments": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true
+  }
+}
