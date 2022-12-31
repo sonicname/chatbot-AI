@@ -1,2 +1,5 @@
 
-.vscode/settings.json
+.vscode/*
+AI/.idea/*
+AI/models_save/*
+AI/tflearn_logs/*
