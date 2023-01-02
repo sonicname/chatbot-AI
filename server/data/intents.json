@@ -1,0 +1,489 @@
+{
+   "intents": [
+      {
+         "tag": "greeting",
+         "patterns": [
+            "Xin chào",
+            "Chào",
+            "Có ai ở đây không?",
+            "Có ai không?"
+         ],
+         "responses": [
+            "Tôi là AI, tôi có thể giúp gì cho bạn",
+            "Tôi có thể giúp gì không?",
+            "Tôi có thể giúp gì cho bạn không?"
+         ],
+         "context_set": ""
+      },
+      {
+         "tag": "address",
+         "patterns": [
+            "Địa chỉ",
+            "Điển bán",
+            "Các chi nhánh của cửa hàng",
+            "Địa chỉ của cửa hàng"
+         ],
+         "responses": [
+            "Cửa hàng chúng tôi có mặt tại tất cả các tỉnh thành trên cả nước"
+         ]
+      },
+      {
+         "tag": "hours",
+         "patterns": [
+            "Thời gian",
+            "Thời gian mở cửa",
+            "Thời gian hoạt động của cửa hàng",
+            "Thời gian mở cửa của cửa hàng"
+         ],
+         "responses": [
+            "7 giờ sáng - 9 giờ tối từ thứ 2 - 7 hằng tuần",
+            "7 giờ sáng - 9 giờ tối hàng ngày từ thứ 2 đến thứ 7"
+         ]
+      },
+      {
+         "tag": "menu",
+         "patterns": [
+            "AI có thể giúp gì?",
+            "Bạn có thể giúp gì cho tôi?",
+            "Bạn có thể làm gì?",
+            "AI có thể làm gì?",
+            "Giúp",
+            "Giúp tôi với",
+            "Có thể làm gì?"
+         ],
+         "responses": [
+            "Tôi có thể giúp bạn tư vấn, lựa chọn máy tính phù hợp với bạn.",
+            "Hãy đặt câu hỏi. Tôi có thể giúp bạn tư vấn, lựa chọn máy tính."
+         ]
+      },
+      {
+         "tag": "payments",
+         "patterns": [
+            "Thanh toán",
+            "Cửa hàng chấp nhận kiểu thanh toán nào?",
+            "Kiểu thanh toán?",
+            "Các kiểu thanh toán của cửa hàng"
+         ],
+         "responses": [
+            "Cửa hàng chúng tôi chấp nhận thanh toán bằng tiền mặt và thẻ, chuyển khoản",
+            "Cửa hàng chấp nhận thanh toán bằng ATM, mastercard, visa, tiền mặt"
+         ]
+      },
+      {
+         "tag": "opentoday",
+         "patterns": [
+            "Hôm nay cửa hàng có mở cửa không?",
+            "Có mở cửa không?",
+            "Hiện tại có đang mở cửa hay không?",
+            "Cửa hàng có còn hoạt động hay không?"
+         ],
+         "responses": [
+            "Cửa hàng chúng tôi mở cửa từ 7 giờ sáng - 9 giờ tối từ thứ 2 - 7 hằng tuần",
+            "7 giờ sáng - 9 giờ tối hàng ngày từ thứ 2 đến thứ 7"
+         ]
+      },
+      {
+         "tag": "type_usage",
+         "patterns": [
+            "Tôi muốn mua máy tính",
+            "máy tính",
+            "laptop"
+         ],
+         "responses": [
+            "Bạn muốn mua máy tính phục vụ cho mục đích gì vậy ạ?(học tập, làm việc, gaming)",
+            "Bạn có thể vui lòng cho chúng tôi biết mục đích sử dụng(học tập, làm việc, gaming). chúng tôi sẽ giúp bạn chọn được loại máy phù hợp.",
+            "Bạn muốn mua máy của hãng nào ạ"
+         ]
+      },
+      {
+         "tag": "trademark",
+         "patterns": [
+            "Thương hiệu",
+            "Shop bạn được bên nào cung cấp hàng vậy?",
+            ""
+         ],
+         "responses": [
+            "Cửa hàng chúng tôi có máy của DELL, Lenovo, Asus, MSI, Acer"
+         ]
+      },
+      {
+         "tag": "DELL",
+         "patterns": [
+            "DELL",
+            "Thương hiệu DELL",
+            "Máy của DELL",
+            "Máy tính của dell"
+         ],
+         "responses": [
+            "Đây là danh sách 1 số máy tính của DELL bán chạy nhất hiện nay: "
+         ]
+      },
+      {
+         "tag": "Lenovo",
+         "patterns": [
+            "Lenovo",
+            "Thương hiệu Lenovo",
+            "Máy của Lenovo",
+            "Máy tính của LENOVO"
+         ],
+         "responses": [
+            "Đây là danh sách 1 số máy tính của Lenovo bán chạy nhất hiện nay: "
+         ]
+      },
+      {
+         "tag": "MSI",
+         "patterns": [
+            "MSI",
+            "Thương hiệu MSI",
+            "Máy của MSI",
+            "Máy tính của MSI"
+         ],
+         "responses": [
+            "Đây là danh sách 1 số máy tính của MSI bán chạy nhất hiện nay: "
+         ]
+      },
+      {
+         "tag": "Asus",
+         "patterns": [
+            "Asus",
+            "Thương hiệu Asus",
+            "Máy của Asus",
+            "Máy tính của Asus"
+         ],
+         "responses": [
+            "Đây là danh sách 1 số máy tính của Asus bán chạy nhất hiện nay: "
+         ]
+      },
+      {
+         "tag": "Acer",
+         "patterns": [
+            "Acer",
+            "Thương hiệu Acer",
+            "Máy của Acer",
+            "Máy tính của Acer"
+         ],
+         "responses": [
+            "Đây là danh sách 1 số máy tính của Acer bán chạy nhất hiện nay: "
+         ]
+      },
+      {
+         "tag": "gaming",
+         "patterns": [
+            "gaming",
+            "máy tính gaming",
+            "Máy gaming",
+            "laptop gaming",
+            "Máy để chơi game",
+            "Tôi muốn mua máy để chơi trò chơi",
+            ""
+         ],
+         "responses": [
+            "Sau đây là những máy gaming hot nhất hiện nay: ",
+            "Cửa hàng chúng tôi đã hết hàng, bạn có muốn chọn loại máy khác không"
+         ]
+      },
+      {
+         "tag": "office",
+         "patterns": [
+            "văn phòng",
+            "laptop văn phòng",
+            "Máy để làm việc văn phòng",
+            "Tôi muốn mua máy tính để làm việc",
+            "Tôi muốn mua máy tính giá rẻ ",
+            "Tôi muốn mua máy tính học tập"
+         ],
+         "responses": [
+            "Sau đây là những máy tính văn phòng hot nhất hiện nay"
+         ]
+      },
+      {
+         "tag": "platform",
+         "patterns": [
+            "Hệ điều hành",
+            "Tôi muốn hỏi về hệ điều hành",
+            "Tôi muốn tư vấn về hệ điều hành"
+         ],
+         "responses": [
+            "Bạn muốn hệ điều hành window hay Mac OS",
+            "Bạn muốn dùng máy có hệ điều hành window hay Mac OS"
+         ]
+      },
+      {
+         "tag": "platform_windows",
+         "patterns": [
+            "Tôi muốn hệ điều hành Windows",
+            "Hệ điều hành Windows",
+            "Tôi muốn máy tính sử dụng hệ điều hành windows"
+         ],
+         "responses": [
+            "Bạn muốn Windows 10 hay 11?",
+            "Bạn muốn Windows 10 vuông vức hay Windows 11 hiện đại"
+         ]
+      },
+      {
+         "tag": "platform_windows_7",
+         "patterns": [
+            "Tôi muốn windows 7",
+            "Win 7",
+            "win 7",
+            "Windows 7",
+            "Tôi chọn windows 7"
+         ],
+         "responses": [
+            "Xin lỗi hiện tại windows 7 đã ngưng hỗ trợ",
+            "Cửa hàng chúng tôi không còn máy tính sử dụng hệ điều hành windows 7 nữa rồi!",
+            "Cửa hàng chúng tôi không còn hỗ trợ windows 7"
+         ]
+      },
+      {
+         "tag": "platform_windows_10",
+         "patterns": [
+            "Tôi muốn windows 10",
+            "Win 10",
+            "win 10",
+            "Windows 10",
+            "Tôi chọn windows 10"
+         ],
+         "responses": [
+            "Những máy tính có sử dụng hệ điều hành windows 10: ",
+            "Cửa hàng chúng tôi đang có sẵn những máy tính sử dụng windows 10 là: "
+         ]
+      },
+      {
+         "tag": "platform_windows_11",
+         "patterns": [
+            "Tôi muốn windows 11",
+            "Win 11",
+            "win 11",
+            "Windows 11",
+            "Tôi chọn windows 11"
+         ],
+         "responses": [
+            "Những máy tính có sử dụng hệ điều hành windows 11: ",
+            "Cửa hàng chúng tôi đang có sẵn những máy tính sử dụng windows 11 là: "
+         ]
+      },
+      {
+         "tag": "platform_Mac_Os",
+         "patterns": [
+            "Tôi muốn Mac Os",
+            "Tôi muốn Mac_Os",
+            "Mac Os",
+            "Mac_Os",
+            "Tôi chọn Mac_Os",
+            "tôi chọn mac_os"
+         ],
+         "responses": [
+            "Những máy tính có sử dụng hệ điều hành Mac Os: ",
+            "Cửa hàng chúng tôi đang có sẵn những máy tính sử dụng Mac Os là: "
+         ]
+      },
+      {
+         "tag": "cpu_intel",
+         "patterns": [
+            "Tôi muốn máy tính được trang bị chip intel",
+            "Tôi thích chip intel",
+            "Chip intel",
+            "intel",
+            "Vi xử lý intel"
+         ],
+         "responses": [
+            "Bạn muốn chip thế hệ bao nhiêu?",
+            "Thế hệ thứ 3 phù hợp cho những tác vụ nhẹ, lướt web, xem phim. Thế hệ thứ 5 cho những tác vụ tầm trung: gaming, "
+         ]
+      },
+      {
+         "tag": "storage",
+         "patterns": [
+            "Tôi muốn tìm hiểu về ổ cứng",
+            "ổ cứng"
+         ],
+         "responses": [
+            "Bạn muốn ổ cứng SSD hay HHD?",
+            "Chúng tôi có ổ cứng SSD và HHD, bạn muốn loại nào?"
+         ]
+      },
+      {
+         "tag": "storage_SSD",
+         "patterns": [
+            "Tôi muốn SSD",
+            "SSD",
+            "Tôi muốn ổ cứng SSD",
+            "ổ cứng SSD"
+         ],
+         "responses": [
+            "Sau đây là những loại ổ cứng SSD của chúng tôi",
+            "Đây là danh sách ổ cứng SSD bán chạy nhất của chúng tôi"
+         ]
+      },
+      {
+         "tag": "storage_HHD",
+         "patterns": [
+            "Tôi muốn HHD",
+            "HHD",
+            "Tôi muốn ổ cứng HHD",
+            "ổ cứng HHD"
+         ],
+         "responses": [
+            "Sau đây là những loại ổ cứng HHD của chúng tôi",
+            "Đây là danh sách ổ cứng HHD bán chạy nhất của chúng tôi"
+         ]
+      },
+      {
+         "tag": "size",
+         "patterns": [
+            "Máy ở của hàng bạn có những loại kích thước nào"
+         ],
+         "responses": [
+            "Cửa hàng của chúng tối có những loại máy tính: 11-12 inches, 13-14 inches, 15-16 inches, 17 inches, Bạn muốn chọn loại nào?"
+         ]
+      },
+      {
+         "tag": "size_11_12",
+         "patterns": [
+            "11 inches",
+            "12 inches",
+            "Tôi muốn 11 inches",
+            "Tôi muốn 12 inches",
+            "Tôi muốn máy 11 inches",
+            "Tôi muốn máy 12 inches"
+         ],
+         "responses": [
+            "Sau đây là những loại máy tính từ 11-12 inches tốt nhất ở cửa hàng chúng tôi:",
+            "Sau đây là những loại máy tính từ 11-12 inches của chúng tôi:",
+            "Những máy tính từ 11-12 inches tốt nhât của cửa hàng chúng tôi: "
+         ]
+      },
+      {
+         "tag": "size_13_14",
+         "patterns": [
+            "13 inches",
+            "14 inches",
+            "Tôi muốn 13 inches",
+            "Tôi muốn 14 inches"
+         ],
+         "responses": [
+            "Sau đây là những loại máy tính từ 11-12 inches tốt nhất ở cửa hàng chúng tôi:",
+            "Sau đây là những loại 6máy tính từ 11-12 inches của chúng tôi:",
+            "Những máy tính từ 11-12 inches tốt nhât của cửa hàng chúng tôi: "
+         ]
+      },
+      {
+         "tag": "size_15_16",
+         "patterns": [
+            "15 inches",
+            "16 inches",
+            "Tôi muốn 15 inches",
+            "Tôi muốn 16 inches"
+         ],
+         "responses": [
+            "Sau đây là những loại máy tính từ 15-16 inches tốt nhất ở cửa hàng chúng tôi:",
+            "Sau đây là những loại máy tính từ 15-16 inches của chúng tôi:",
+            "Những máy tính từ 15-16 inches tốt nhât của cửa hàng chúng tôi: "
+         ]
+      },
+      {
+         "tag": "size_17",
+         "patterns": [
+            "17 inches",
+            "Tôi muốn 17 inches"
+         ],
+         "responses": [
+            "Sau đây là những loại máy tính từ 17 inches tốt nhất ở cửa hàng chúng tôi:",
+            "Sau đây là những loại máy tính từ 17 inches của chúng tôi:",
+            "Những máy tính từ 17 inches tốt nhât của cửa hàng chúng tôi: "
+         ]
+      },
+      {
+         "tag": "Ram",
+         "patterns": [
+            "Tối muốn tìm hiểu về ram",
+            "Ram",
+            "Các loại ram",
+            "Ram phù hợp"
+         ],
+         "responses": [
+            "Dựa theo mục đích sử dụng, chúng tôi chia phân loại ram tùy theo mục đích sử dụng : dưới 4GB, 4GB-8GB, 16-32GB"
+         ]
+      },
+      {
+         "tag": "Ram_under_4",
+         "patterns": [
+            "2GB",
+            "Ram 2GB"
+         ],
+         "responses": [
+            "Sau đây là danh sách những loại ram dưới 4 GB của cửa hàng chúng tôi: ",
+            "Danh sách những loại ram dưới 4 GB của cửa hàng chúng tôi: "
+         ]
+      },
+      {
+         "tag": "Ram_4_8",
+         "patterns": [
+            "4GB",
+            "Ram 4GB",
+            "8GB",
+            "Ram 8GB"
+         ],
+         "responses": [
+            "Sau đây là danh sách những loại ram 4-8 GB của cửa hàng chúng tôi: ",
+            "Danh sách những loại ram 4-8 GB của cửa hàng chúng tôi: "
+         ]
+      },
+      {
+         "tag": "Ram_16_32",
+         "patterns": [
+            "16GB",
+            "Ram 16GB",
+            "32GB",
+            "Ram 32GB"
+         ],
+         "responses": [
+            "Sau đây là danh sách những loại ram 16-32 GB của cửa hàng chúng tôi: ",
+            "Danh sách những loại ram 16-32 GB của cửa hàng chúng tôi: "
+         ]
+      },
+      {
+         "tag": "goodbye",
+         "patterns": [
+            "Tạm biệt",
+            "Hẹn gặp lại",
+            "Tôi đi đây",
+            "Bye",
+            "Goodbye"
+         ],
+         "responses": [
+            "Xin chào tạm biệt và hẹn gặp lại",
+            "Chúc quý khách có ngày vui vẻ",
+            "Tạm biệt",
+            "Hẹn gặp lại"
+         ]
+      },
+      {
+         "tag": "thanks",
+         "patterns": [
+            "Thanks",
+            "Thank you",
+            "Cảm ơn",
+            "Điều đó thật có ích",
+            "Rất hữu dụng"
+         ],
+         "responses": [
+            "Không có gì",
+            "Bất cứ khi nào quý khách cần",
+            "Đó là vinh dự của tôi",
+            "Cảm ơn vì đã sử dụng dịch vụ"
+         ]
+      },
+      {
+         "tag": "others",
+         "patterns": [
+            "Tư vấn thêm",
+            "khác"
+         ],
+         "responses": [
+            "Xin vui lòng đợi tôi liên hệ đến người hỗ trợ hệ thống để bạn có thể được tư vấn trực tiếp"
+         ]
+      }
+   ]
+}

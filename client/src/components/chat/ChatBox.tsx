@@ -1,29 +1,26 @@
-import { useEffect, useRef } from 'react';
+import { MutableRefObject, useEffect } from 'react';
 import { Socket } from 'socket.io-client';
 
-import Message from './Message';
-import Response from './Response';
+import Message from '../Message';
+import Response from '../Response';
 
-import useResize from '../hooks/useResize';
-import useGlobalStore from '../store/useGlobalStore';
+import useResize from '../../hooks/useResize';
+import useScrollToRef from '../../hooks/useScrollToRef';
+import useGlobalStore from '../../store/useGlobalStore';
 
 interface IChatBoxProps {
   socket: Socket;
+  ref?: MutableRefObject<HTMLDivElement | null>;
 }
 
-const ChatBox = ({ socket }: IChatBoxProps) => {
+const ChatBox = ({ socket, ref }: IChatBoxProps) => {
   const size = useResize();
   const { message, setMessage } = useGlobalStore();
-
-  const messageBottomRef = useRef<HTMLDivElement | null>(null);
+  const { elementRef } = useScrollToRef(message);
 
   useEffect(() => {
     socket.on('response', (res: string) => setMessage({ isBot: true, content: res }));
   }, [socket]);
-
-  useEffect(() => {
-    messageBottomRef.current?.scrollIntoView({ behavior: 'smooth' });
-  }, [message]);
 
   return (
     <div
@@ -34,6 +31,7 @@ const ChatBox = ({ socket }: IChatBoxProps) => {
             ? size.height && size.height - 40 - 60
             : size.height && size.height - 64 - 76,
       }}
+      ref={ref}
     >
       {message.length > 0 ? (
         <>
@@ -44,7 +42,7 @@ const ChatBox = ({ socket }: IChatBoxProps) => {
               <Message key={index}>{message.content}</Message>
             ),
           )}
-          <div ref={messageBottomRef}></div>
+          <div ref={elementRef} />
         </>
       ) : (
         <div className='text-gray-400 text-center'>Hiện tại chưa có tin nhắn!</div>

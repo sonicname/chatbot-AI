@@ -1,5 +1,6 @@
 
 .vscode/*
-AI/.idea/*
-AI/models_save/*
-AI/tflearn_logs/*
+server/.idea/*
+server/models_save/*
+server/tflearn_logs/*
+server/.idea/AI.iml

@@ -1,5 +1,5 @@
-import IconClose from './IconClose';
-import IconMenu from './IconMenu';
+import IconClose from './icons/IconClose';
+import IconMenu from './icons/IconMenu';
 
 import useGlobalStore from '../store/useGlobalStore';
 

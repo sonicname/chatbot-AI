@@ -1,10 +1,10 @@
 import { useRef } from 'react';
 import { Socket } from 'socket.io-client';
 
-import IconSend from './IconSend';
+import IconSend from '../icons/IconSend';
 
-import handleKeyPress from '../hooks/handleKeyPress';
-import useGlobalStore from '../store/useGlobalStore';
+import handleKeyPress from '../../hooks/handleKeyPress';
+import useGlobalStore from '../../store/useGlobalStore';
 
 interface IChatInputProps {
   socket: Socket;
@@ -16,21 +16,22 @@ const ChatInput = ({ socket }: IChatInputProps) => {
 
   const handleSendMessage = () => {
     if (!messageRef.current) return;
-    const value = messageRef.current.value;
+    const message = messageRef.current.value;
 
-    if (!value) return;
+    if (!message) return;
 
-    socket.emit('message', value);
+    socket.emit('message', message);
 
     setMessage({
       isBot: false,
-      content: value,
+      content: message,
     });
 
     messageRef.current.value = '';
   };
 
   handleKeyPress('Enter', handleSendMessage);
+
   return (
     <div className='p-2 lg:p-4 absolute bottom-0 flex w-full gap-x-2 lg:gap-x-4 items-center'>
       <input
