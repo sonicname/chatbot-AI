@@ -11,13 +11,13 @@ import eventlet
 
 stemmer = LancasterStemmer()
 
-data = pickle.load(open(r"E:\Github\chatbot-AI\AI\models_save\training_data", "rb"))
+data = pickle.load(open(r"models_save\training_data", "rb"))
 words = data['words']
 classes = data['classes']
 train_x = data['train_x']
 train_y = data['train_y']
 
-with open(r"E:\Github\chatbot-AI\AI\data\intents.json", encoding="utf8") as json_data:
+with open(r"data\intents.json", encoding="utf8") as json_data:
     intents = json.load(json_data)
 
 net = tflearn.input_data(shape=[None, len(train_x[0])])
@@ -50,7 +50,7 @@ def bow(sentence, words, show_details=False):
     return np.array(bag)
 
 
-model.load(r'E:\Github\chatbot-AI\AI\models_save\model.tflearn')
+model.load(r'models_save\model.tflearn')
 
 context = {}
 
