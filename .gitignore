@@ -4,3 +4,4 @@ server/.idea/*
 server/models_save/*
 server/tflearn_logs/*
 server/.idea/AI.iml
+.idea/
