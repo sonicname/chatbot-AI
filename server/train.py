@@ -1,16 +1,14 @@
 import nltk
 from nltk.stem.lancaster import LancasterStemmer
-
-stemmer = LancasterStemmer()
-
-nltk.download('punkt')
-
 import numpy as np
 import tflearn
 import tensorflow as tf
 import random
-
 import json
+import pickle
+
+stemmer = LancasterStemmer()
+nltk.download('punkt')
 
 with open('data/intents.json', encoding="utf8") as json_data:
     intents = json.load(json_data)
@@ -98,8 +96,6 @@ model = tflearn.DNN(net, tensorboard_dir='tflearn_logs')
 
 model.fit(train_x, train_y, n_epoch=1000, batch_size=8, show_metric=True)
 model.save('models_save/model.tflearn')
-
-import pickle
 
 pickle.dump({'words': words, 'classes': classes, 'train_x': train_x, 'train_y': train_y},
             open("models_save/training_data", "wb"))

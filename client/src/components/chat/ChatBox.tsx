@@ -28,8 +28,8 @@ const ChatBox = ({ socket, ref }: IChatBoxProps) => {
       style={{
         maxHeight:
           size.width && size.width < 1024
-            ? size.height && size.height - 40 - 60
-            : size.height && size.height - 64 - 76,
+            ? size.height && size.height - 40 - 100
+            : size.height && size.height - 64 - 116,
       }}
       ref={ref}
     >

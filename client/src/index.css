@@ -15,3 +15,11 @@ html {
   max-height: 100vh;
   overflow: hidden;
 }
+
+.swiper {
+  width: 100%;
+}
+
+.swiper-slide {
+  width: auto !important;
+}

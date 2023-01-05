@@ -105,6 +105,7 @@ def connect_error():
 
 @io.event
 def message(sid, data):
+    print(classify(data))
     response_message = response(data)
     io.emit("response", response_message)
 

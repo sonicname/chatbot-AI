@@ -48,7 +48,13 @@
     },
     {
       "tag": "payments",
-      "patterns": ["Thanh toán", "kiểu thanh toán", "Kiểu thanh toán"],
+      "patterns": [
+        "Thanh toán",
+        "kiểu thanh toán",
+        "Kiểu thanh toán",
+        "Cửa hàng có những kiểu thanh toán nào?",
+        "Có những kiểu thanh toán nào?"
+      ],
       "responses": [
         "Cửa hàng chúng tôi chấp nhận thanh toán bằng tiền mặt và thẻ, chuyển khoản",
         "Cửa hàng chấp nhận thanh toán bằng ATM, mastercard, visa, tiền mặt"
@@ -60,7 +66,6 @@
         "Hôm nay cửa hàng có mở cửa không?",
         "Có mở cửa không?",
         "Hôm nay",
-        "hôm nay",
         "Hiện tại có đang mở cửa hay không?",
         "Cửa hàng có còn hoạt động hay không?"
       ],
@@ -72,11 +77,13 @@
     {
       "tag": "type_usage",
       "patterns": [
-        "Tôi muốn mua",
-        "muốn mua",
-        "Tư vấn mua máy tính",
+        "tư vấn",
         "tư vấn mua máy tính",
-        "tư vấn"
+        "Tư vấn mua máy tính",
+        "Tôi cần tư vấn mua máy tính?",
+        "tôi cần tư vấn mua máy tính?",
+        "Giúp tôi chọn lựa máy tính",
+        "giúp tôi chọn lựa máy tính"
       ],
       "responses": [
         "Bạn muốn mua máy tính phục vụ cho mục đích gì vậy ạ? (học tập, làm việc, gaming)",
@@ -87,14 +94,15 @@
     {
       "tag": "trademark",
       "patterns": [
-        "Thương hiệu",
-        "hãng máy tính",
         "hãng",
-        "hãng laptop",
-        "Hãng máy tính",
         "hãng máy tính",
-        "bên cung cấp",
-        "Bên cung cấp"
+        "hãng laptop",
+        "Thương hiệu",
+        "Hãng máy tính",
+        "Bên cung cấp",
+        "Cửa hàng có những hãng máy tính nào?",
+        "Hãy giúp tôi chọn hãng máy tính",
+        "Giúp tôi lựa chọn hãng máy tính"
       ],
       "responses": ["Cửa hàng chúng tôi có máy của DELL, Lenovo, Asus, MSI, Acer"]
     },
@@ -107,10 +115,15 @@
         "máy tính DELL",
         "hãng dell",
         "Hãng DELL",
-        "hãng DELL"
+        "hãng DELL",
+        "Tôi muốn mua máy tính dell",
+        "Tôi muốn mua máy tính hãng dell",
+        "Tôi muốn mua máy tính DELL",
+        "Tôi muốn mua máy tính hãng DELL"
       ],
       "responses": [
-        "Laptop Dell là một trong những thương hiệu nổi tiếng từ lâu, thuộc Dell Inc được thành lập vào năm 1984 bởi Michael Dell, là một công ty đa quốc gia của Hoa Kỳ về phát triển và thương mại hóa công nghệ máy tính có trụ sở tại Round Rock, Texas, Hoa Kỳ."
+        "Laptop Dell là một trong những thương hiệu nổi tiếng từ lâu và thương mại hóa công nghệ máy tính có trụ sở tại Round Rock, Texas, Hoa Kỳ.",
+        "Máy tính Dell phù hợp với những doanh nhân muốn một chiếc máy tính làm việc sang trọng, lịch lãm."
       ]
     },
     {
@@ -122,11 +135,15 @@
         "máy tính LENOVO",
         "hãng lenovo",
         "Hãng lenovo",
-        "hãng Lenovo"
+        "hãng Lenovo",
+        "Tôi muốn mua máy tính lenovo",
+        "Tôi muốn mua máy tính hãng lenovo",
+        "Tôi muốn mua máy tính Lenovo",
+        "Tôi muốn mua máy tính hãng Lenovo"
       ],
       "responses": [
-        "Lenovo - Thương hiệu Trung Quốc, Lenovo là tập đoàn đa quốc gia về công nghệ máy tính, được thành lập vào năm 1984 ở Bắc Kinh với tên Legend. Hiện nay Lenovo có các trụ sở chính ở Bắc Kinh Trung Quốc và Morrisville - Bắc Carolina - Mỹ.",
-        "Lenovo sản xuất nhiều sản phẩm như điện thoại, thiết bị lưu trữ điện tử,... nổi bật nhất là laptop.",
+        "Lenovo - Thương hiệu Trung Quốc. Với những chiếc máy tính giá cả phải chăng.",
+        "Lenovo sản xuất nhiều sản phẩm như điện thoại, thiết bị lưu trữ điện tử,... nổi bật nhất là laptop thinkpad.",
         "Laptop Lenovo được sản xuất với dây chuyền công nghệ hiện đại với chất lượng tốt, giá thành rẻ so với máy tính có cấu hình, tính năng tương tự."
       ]
     },
@@ -139,7 +156,11 @@
         "máy tính MSI",
         "hãng msi",
         "Hãng msi",
-        "hãng Msi"
+        "hãng Msi",
+        "Tôi muốn mua máy tính msi",
+        "Tôi muốn mua máy tính hãng msi",
+        "Tôi muốn mua máy tính MSI",
+        "Tôi muốn mua máy tính hãng MSI"
       ],
       "responses": [
         "MSI được viết tắt từ cụm Micro-Star International, là một công ty công nghệ đa quốc gia có trụ sở tại Tân Bắc, Đài Loan được thành lập vào năm 1986.",
@@ -155,7 +176,11 @@
         "máy tính Asus",
         "hãng asus",
         "Hãng asus",
-        "hãng Asus"
+        "hãng Asus",
+        "Tôi muốn mua máy tính asus",
+        "Tôi muốn mua máy tính hãng asus",
+        "Tôi muốn mua máy tính Asus",
+        "Tôi muốn mua máy tính hãng Asus"
       ],
       "responses": [
         "ASUS là một tập đoàn đa quốc gia chuyên sản xuất ra các mặt hàng điện tử lớn thứ 5 thế giới tính theo doanh số năm 2017",
@@ -171,7 +196,11 @@
         "máy tính Acer",
         "hãng acer",
         "Hãng acer",
-        "hãng Acer"
+        "hãng Acer",
+        "Tôi muốn mua máy tính acer",
+        "Tôi muốn mua máy tính hãng acer",
+        "Tôi muốn mua máy tính Acer",
+        "Tôi muốn mua máy tính hãng Acer"
       ],
       "responses": [
         "Acer - Thương hiệu nổi tiếng từ Đài Loan. Được thành lập năm 1976, Acer là tập đoàn đa quốc gia về thiết bị điện tử và phần cứng máy tính của Đài Loan. Hiện nay trụ sở chính của Acer đặt tại thành phố Tân Bắc, Đài Loan và tại San Jose, California, Mỹ.",
@@ -186,7 +215,11 @@
         "Máy chơi game",
         "laptop gaming",
         "Máy để chơi game",
-        "máy chơi trò chơi"
+        "máy chơi trò chơi",
+        "Tôi muốn mua máy tính gaming",
+        "Tôi muốn mua máy tính chơi game",
+        "Tôi muốn mua máy tính để chơi game",
+        "Tôi muốn mua máy tính cấu hình khủng"
       ],
       "responses": [
         "Laptop gaming là loại máy tính xách tay chuyên dụng được thiết kế chuyên biệt để phục vụ việc chơi các tựa game có cấu hình nặng và đòi hỏi cao về xử lý đồ họa.",
@@ -202,7 +235,11 @@
         "làm việc văn phòng",
         "máy tính để làm việc",
         "máy tính giá rẻ",
-        "máy tính học tập"
+        "máy tính học tập",
+        "Tôi muốn mua máy tính văn phòng",
+        "Tôi muốn mua máy tính giá rẻ",
+        "Tôi muốn mua máy tính làm việc nhẹ",
+        "Tôi muốn mua máy tính để làm việc"
       ],
       "responses": [
         "Là một loại máy tính được sử dụng cho các đối tượng nhân viên văn phòng nhằm đáp ứng các công việc văn phòng. Các công việc văn phòng thường có lượng công việc thấp với các phần mềm văn phòng nhẹ nên cấu hình của máy tính văn phòng tương đối thấp."
@@ -212,6 +249,7 @@
       "tag": "platform",
       "patterns": [
         "Hệ điều hành",
+        "hệ điều hành",
         "Tôi muốn hỏi về hệ điều hành",
         "Tôi muốn tư vấn về hệ điều hành"
       ],
@@ -224,6 +262,7 @@
       "tag": "platform_windows",
       "patterns": [
         "Tôi muốn hệ điều hành Windows",
+        "tôi muốn máy tính windows",
         "Hệ điều hành Windows",
         "Tôi muốn máy tính sử dụng hệ điều hành windows"
       ],
@@ -234,7 +273,14 @@
     },
     {
       "tag": "platform_windows_7",
-      "patterns": ["Tôi muốn windows 7", "Win 7", "win 7", "Windows 7", "Tôi chọn windows 7"],
+      "patterns": [
+        "Tôi muốn windows 7",
+        "Win 7",
+        "win 7",
+        "Windows 7",
+        "Tôi chọn windows 7",
+        "tôi muốn máy tính windows 7"
+      ],
       "responses": [
         "Xin lỗi hiện tại windows 7 đã ngưng hỗ trợ",
         "Cửa hàng chúng tôi không còn máy tính sử dụng hệ điều hành windows 7 nữa rồi!",
@@ -243,7 +289,7 @@
     },
     {
       "tag": "platform_windows_10",
-      "patterns": ["Win 10", "win 10", "Windows 10", "windows 10"],
+      "patterns": ["Win 10", "win 10", "Windows 10", "windows 10", "Tôi muốn máy tính windows 10"],
       "responses": [
         "Những máy tính có sử dụng hệ điều hành windows 10: ",
         "Cửa hàng chúng tôi đang có sẵn những máy tính sử dụng windows 10 là: "
@@ -251,7 +297,7 @@
     },
     {
       "tag": "platform_windows_11",
-      "patterns": ["Win 11", "win 11", "Windows 11", "windows 11"],
+      "patterns": ["Win 11", "win 11", "Windows 11", "windows 11", "Tôi muốn máy tính windows 11"],
       "responses": [
         "Những máy tính có sử dụng hệ điều hành windows 11: ",
         "Cửa hàng chúng tôi đang có sẵn những máy tính sử dụng windows 11 là: "
@@ -259,7 +305,14 @@
     },
     {
       "tag": "platform_Mac_Os",
-      "patterns": ["Tôi muốn Mac OS", "Tôi muốn Mac_OS", "Mac OS", "Mac_OS"],
+      "patterns": [
+        "Tôi muốn Mac OS",
+        "Tôi muốn Mac_OS",
+        "Mac OS",
+        "Mac_OS",
+        "Tôi muốn máy tính macos",
+        "tôi muốn máy tính apple"
+      ],
       "responses": [
         "Những máy tính có sử dụng hệ điều hành Mac Os: ",
         "Cửa hàng chúng tôi đang có sẵn những máy tính sử dụng Mac Os là: "
@@ -269,6 +322,7 @@
       "tag": "cpu_intel",
       "patterns": [
         "Tôi muốn máy tính được trang bị chip intel",
+        "Tôi muốn máy tính sử dụng chip intel",
         "Chip intel",
         "intel",
         "Intel",
