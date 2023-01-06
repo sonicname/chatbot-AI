@@ -49,7 +49,7 @@ const ChatInput = ({ socket }: IChatInputProps) => {
 
   return (
     <div className='p-2 lg:p-4 absolute bottom-0 w-full flex flex-col gap-y-2 select-none'>
-      <Swiper spaceBetween={30} grabCursor={true} slidesPerView={'auto'}>
+      <Swiper spaceBetween={20} grabCursor={true} slidesPerView={'auto'}>
         {suggestQuestion.map((ques, index) => (
           <SwiperSlide
             key={index}
@@ -58,7 +58,9 @@ const ChatInput = ({ socket }: IChatInputProps) => {
               messageRef.current.value = ques;
             }}
           >
-            <span className='cursor-pointer text-md line-clamp-1 p-1'>{ques}</span>
+            <span className='cursor-pointer text-md line-clamp-1 p-1 border border-gray-300 rounded-md hover:border-gray-600'>
+              {ques}
+            </span>
           </SwiperSlide>
         ))}
       </Swiper>

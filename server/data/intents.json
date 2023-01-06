@@ -16,12 +16,7 @@
     },
     {
       "tag": "hours",
-      "patterns": [
-        "Thời gian",
-        "Thời gian mở cửa",
-        "mở cửa",
-        "Thời gian hoạt động"
-      ],
+      "patterns": ["Thời gian", "Thời gian mở cửa", "mở cửa", "Thời gian hoạt động"],
       "responses": [
         "7 giờ sáng - 9 giờ tối từ thứ 2 - 7 hằng tuần",
         "7 giờ sáng - 9 giờ tối hàng ngày từ thứ 2 đến thứ 7"
@@ -113,12 +108,7 @@
     },
     {
       "tag": "Lenovo",
-      "patterns": [
-        "LENOVO",
-        "máy tính LENOVO",
-        "Hãng lenovo",
-        "Tôi muốn mua máy tính Lenovo"
-      ],
+      "patterns": ["LENOVO", "máy tính LENOVO", "Hãng lenovo", "Tôi muốn mua máy tính Lenovo"],
       "responses": [
         "Lenovo - Thương hiệu Trung Quốc. Với những chiếc máy tính giá cả phải chăng.",
         "Lenovo sản xuất nhiều sản phẩm như điện thoại, thiết bị lưu trữ điện tử,... nổi bật nhất là laptop thinkpad.",
@@ -135,8 +125,8 @@
         "Tôi muốn mua máy tính hãng MSI"
       ],
       "responses": [
-        "MSI được viết tắt từ cụm Micro-Star International, là một công ty công nghệ đa quốc gia có trụ sở tại Tân Bắc, Đài Loan được thành lập vào năm 1986.",
-        "Laptop MSI thuộc về một thương hiệu Đài Loan."
+        "MSI được viết tắt từ cụm Micro-Star International, là một công ty công nghệ đa quốc gia",
+        "MSI thuộc về một thương hiệu Đài Loan."
       ]
     },
     {
@@ -163,8 +153,8 @@
         "Tôi muốn mua máy tính hãng Acer"
       ],
       "responses": [
-        "Acer - Thương hiệu nổi tiếng từ Đài Loan. Được thành lập năm 1976, Acer là tập đoàn đa quốc gia về thiết bị điện tử và phần cứng máy tính của Đài Loan. Hiện nay trụ sở chính của Acer đặt tại thành phố Tân Bắc, Đài Loan và tại San Jose, California, Mỹ.",
-        "Acer đã tiếp cận thị trường Việt Nam với sản phẩm máy tính cá nhân vào năm 1996. Bên cạnh sản phẩm máy tính xách tay,  Acer còn sản xuất đồng hồ thông minh, máy tính bảng, màn hình hiển thị và các thiết bị ngoại vi."
+        "Acer - Thương hiệu nổi tiếng từ Đài Loan.",
+        "Acer đã tiếp cận thị trường Việt Nam với sản phẩm máy tính cá nhân vào năm 1996"
       ]
     },
     {
@@ -183,7 +173,7 @@
       ],
       "responses": [
         "Laptop gaming là loại máy tính xách tay chuyên dụng được thiết kế chuyên biệt để phục vụ việc chơi các tựa game có cấu hình nặng và đòi hỏi cao về xử lý đồ họa.",
-        "Những chiếc laptop gaming luôn được các nhà sản xuất áp dụng các công nghệ mới nhất, mạnh nhất cho phần cứng. Chính vì thế, các dòng laptop này sẽ đáp ứng nhu cầu chơi game của những game thủ có nhu cầu chơi game hàng ngày, đảm bảo chất lượng vượt trội về tốc độ xử lý, hình ảnh, âm thanh, hiệu năng hoạt động."
+        "Những chiếc laptop gaming luôn được các nhà sản xuất áp dụng các công nghệ mới nhất, mạnh nhất cho phần cứng."
       ]
     },
     {
@@ -202,7 +192,8 @@
         "Tôi muốn mua máy tính để làm việc"
       ],
       "responses": [
-        "Là một loại máy tính được sử dụng cho các đối tượng nhân viên văn phòng nhằm đáp ứng các công việc văn phòng. Các công việc văn phòng thường có lượng công việc thấp với các phần mềm văn phòng nhẹ nên cấu hình của máy tính văn phòng tương đối thấp."
+        "Là một loại máy tính được sử dụng cho các đối tượng nhân viên văn phòng nhằm đáp ứng các công việc văn phòng.",
+        "Các công việc văn phòng thường có lượng công việc thấp với các phần mềm văn phòng nhẹ nên cấu hình của máy tính văn phòng tương đối thấp."
       ]
     },
     {
@@ -287,8 +278,22 @@
         "Vi xử lý intel"
       ],
       "responses": [
-        "Bạn muốn chip thế hệ bao nhiêu?",
-        "Thế hệ thứ 3 phù hợp cho những tác vụ nhẹ, lướt web, xem phim. Thế hệ thứ 5 cho những tác vụ tầm trung: gaming, "
+        "Chip Intel, còn gọi vi xử lý Intel, là loại chip do tập đoàn Intel thiết kế và sản xuất.",
+        "Chip Intel là một trong những thương hiệu chip máy tính lớn nhất trên nhiều quốc gia."
+      ]
+    },
+    {
+      "tag": "cpu_amd",
+      "patterns": [
+        "Tôi muốn máy tính được trang bị chip AMD",
+        "Tôi muốn máy tính sử dụng chip AMD",
+        "Chip AMD",
+        "AMD",
+        "Vi xử lý AMD"
+      ],
+      "responses": [
+        "AMD là thương hiệu chip máy tính lớn thứ 2 thế giới chỉ sau Intel",
+        "AMD có trụ sở tại Hoa Kỳ còn là một thương hiệu lớn về sản xuất card đồ họa rời và các linh kiện điện tử khác."
       ]
     },
     {
@@ -375,7 +380,7 @@
     },
     {
       "tag": "others",
-      "patterns": ["Tư vấn thêm", "khác"],
+      "patterns": [""],
       "responses": [
         "Xin vui lòng đợi tôi liên hệ đến người hỗ trợ hệ thống để bạn có thể được tư vấn trực tiếp"
       ]
