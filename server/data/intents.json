@@ -7,8 +7,7 @@
         "Tôi là AI, tôi có thể giúp gì cho bạn",
         "Tôi có thể giúp gì không?",
         "Tôi có thể giúp gì cho bạn không?"
-      ],
-      "context_set": ""
+      ]
     },
     {
       "tag": "address",
@@ -37,8 +36,6 @@
         "AI có thể làm gì?",
         "làm gì?",
         "Làm được gì?",
-        "Giúp",
-        "Giúp tôi với",
         "Có thể làm gì?"
       ],
       "responses": [
