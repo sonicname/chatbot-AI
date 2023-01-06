@@ -1,18 +1,18 @@
-from underthesea import word_tokenize
+
 import numpy as np
 import tflearn
 import tensorflow as tf
 import random
-import json
 import pickle
 
+from underthesea import word_tokenize
+import json
 with open('data/intents.json', encoding="utf8") as json_data:
     intents = json.load(json_data)
 
 words = []
 classes = []
 documents = []
-ignore_words = ['?', 'và', 'à', 'ừ', 'ạ', 'vì', 'từng', 'một_cách']
 
 for intent in intents['intents']:
     for pattern in intent['patterns']:
@@ -22,9 +22,9 @@ for intent in intents['intents']:
         if intent['tag'] not in classes:
             classes.append(intent['tag'])
 
-words = [w.lower() for w in words if w not in ignore_words]
+words = [w.lower() for w in words]
 words = sorted(list(set(words)))
-classes = sorted(list(set(classes)))
+classes = sorted(list(set(classes)))\
 
 training = []
 output = []
@@ -49,6 +49,7 @@ training = np.array(training, dtype=object)
 train_x = list(training[:, 0])
 train_y = list(training[:, 1])
 
+
 tf.compat.v1.reset_default_graph()
 
 net = tflearn.input_data(shape=[None, len(train_x[0])])
@@ -59,7 +60,7 @@ net = tflearn.regression(net)
 
 model = tflearn.DNN(net, tensorboard_dir='tflearn_logs')
 
-model.fit(train_x, train_y, n_epoch=1000, batch_size=8, show_metric=True)
+model.fit(train_x, train_y, n_epoch=4000, batch_size=32, show_metric=True)
 model.save('models_save/model.tflearn')
 
 pickle.dump({'words': words, 'classes': classes, 'train_x': train_x, 'train_y': train_y},

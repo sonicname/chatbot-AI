@@ -2,11 +2,12 @@ from underthesea import word_tokenize
 import numpy as np
 import tflearn
 import random
-import pickle
-import json
 
 import socketio
 import eventlet
+
+import json
+import pickle
 
 data = pickle.load(open("models_save/training_data", "rb"))
 words = data['words']
@@ -38,11 +39,11 @@ def bow(sentence, word):
     return np.array(bag)
 
 
-model.load('models_save/model.tflearn')
-
 context = {}
 
 ERROR_THRESHOLD = 0.25
+
+model.load('models_save/model.tflearn')
 
 
 def classify_ai(sentence):
@@ -91,8 +92,14 @@ def connect_error():
 
 @io.event
 def message(sid, data):
-    print(classify_ai(data))
-    io.emit("response", response(data))
+    classify_res = classify_ai(data)
+    io.emit('response', {
+        'response': str(response(data)),
+        'classify': {
+            'tag': str(classify_res[0][0]),
+            'percent': float(classify_res[0][1])
+        }
+    })
 
 
 if __name__ == "__main__":

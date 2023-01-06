@@ -2,7 +2,7 @@
   "intents": [
     {
       "tag": "greeting",
-      "patterns": ["Xin chào", "Chào", "Có ai ở đây không?", "Có ai không?", "xin chào", "chào"],
+      "patterns": ["Xin chào", "Chào", "Có ai ở đây không?", "Có ai không?"],
       "responses": [
         "Tôi là AI, tôi có thể giúp gì cho bạn",
         "Tôi có thể giúp gì không?",
@@ -11,7 +11,7 @@
     },
     {
       "tag": "address",
-      "patterns": ["Địa chỉ", "Điểm bán", "Các chi nhánh", "chi nhánh", "Chi nhánh", "địa chỉ"],
+      "patterns": ["Địa chỉ", "Điểm bán", "Các chi nhánh", "chi nhánh", "Chi nhánh"],
       "responses": ["Cửa hàng chúng tôi có mặt tại tất cả các tỉnh thành trên cả nước"]
     },
     {
@@ -20,9 +20,7 @@
         "Thời gian",
         "Thời gian mở cửa",
         "mở cửa",
-        "Thời gian hoạt động",
-        "thời gian",
-        "thời gian mở cửa"
+        "Thời gian hoạt động"
       ],
       "responses": [
         "7 giờ sáng - 9 giờ tối từ thứ 2 - 7 hằng tuần",
@@ -74,13 +72,10 @@
     {
       "tag": "type_usage",
       "patterns": [
-        "tư vấn",
-        "tư vấn mua máy tính",
+        "Tư vấn",
         "Tư vấn mua máy tính",
         "Tôi cần tư vấn mua máy tính?",
-        "tôi cần tư vấn mua máy tính?",
-        "Giúp tôi chọn lựa máy tính",
-        "giúp tôi chọn lựa máy tính"
+        "Giúp tôi chọn lựa máy tính"
       ],
       "responses": [
         "Bạn muốn mua máy tính phục vụ cho mục đích gì vậy ạ? (học tập, làm việc, gaming)",
@@ -95,7 +90,6 @@
         "hãng máy tính",
         "hãng laptop",
         "Thương hiệu",
-        "Hãng máy tính",
         "Bên cung cấp",
         "Cửa hàng có những hãng máy tính nào?",
         "Hãy giúp tôi chọn hãng máy tính",
@@ -107,14 +101,8 @@
       "tag": "DELL",
       "patterns": [
         "DELL",
-        "dell",
-        "máy tính dell",
         "máy tính DELL",
-        "hãng dell",
         "Hãng DELL",
-        "hãng DELL",
-        "Tôi muốn mua máy tính dell",
-        "Tôi muốn mua máy tính hãng dell",
         "Tôi muốn mua máy tính DELL",
         "Tôi muốn mua máy tính hãng DELL"
       ],
@@ -126,17 +114,10 @@
     {
       "tag": "Lenovo",
       "patterns": [
-        "Lenovo",
         "LENOVO",
-        "máy tính lenovo",
         "máy tính LENOVO",
-        "hãng lenovo",
         "Hãng lenovo",
-        "hãng Lenovo",
-        "Tôi muốn mua máy tính lenovo",
-        "Tôi muốn mua máy tính hãng lenovo",
-        "Tôi muốn mua máy tính Lenovo",
-        "Tôi muốn mua máy tính hãng Lenovo"
+        "Tôi muốn mua máy tính Lenovo"
       ],
       "responses": [
         "Lenovo - Thương hiệu Trung Quốc. Với những chiếc máy tính giá cả phải chăng.",
@@ -148,14 +129,8 @@
       "tag": "MSI",
       "patterns": [
         "MSI",
-        "msi",
-        "máy tính msi",
         "máy tính MSI",
-        "hãng msi",
         "Hãng msi",
-        "hãng Msi",
-        "Tôi muốn mua máy tính msi",
-        "Tôi muốn mua máy tính hãng msi",
         "Tôi muốn mua máy tính MSI",
         "Tôi muốn mua máy tính hãng MSI"
       ],
@@ -167,15 +142,9 @@
     {
       "tag": "Asus",
       "patterns": [
-        "Asus",
         "ASUS",
-        "máy tính asus",
         "máy tính Asus",
-        "hãng asus",
         "Hãng asus",
-        "hãng Asus",
-        "Tôi muốn mua máy tính asus",
-        "Tôi muốn mua máy tính hãng asus",
         "Tôi muốn mua máy tính Asus",
         "Tôi muốn mua máy tính hãng Asus"
       ],
@@ -187,15 +156,9 @@
     {
       "tag": "Acer",
       "patterns": [
-        "Acer",
         "ACER",
-        "máy tính acer",
         "máy tính Acer",
-        "hãng acer",
-        "Hãng acer",
         "hãng Acer",
-        "Tôi muốn mua máy tính acer",
-        "Tôi muốn mua máy tính hãng acer",
         "Tôi muốn mua máy tính Acer",
         "Tôi muốn mua máy tính hãng Acer"
       ],
@@ -209,10 +172,10 @@
       "patterns": [
         "gaming",
         "chơi game",
-        "Máy chơi game",
-        "laptop gaming",
-        "Máy để chơi game",
-        "máy chơi trò chơi",
+        "Máy tính chơi game",
+        "máy tính gaming",
+        "Máy tính để chơi game",
+        "máy tính chơi trò chơi",
         "Tôi muốn mua máy tính gaming",
         "Tôi muốn mua máy tính chơi game",
         "Tôi muốn mua máy tính để chơi game",
@@ -246,7 +209,6 @@
       "tag": "platform",
       "patterns": [
         "Hệ điều hành",
-        "hệ điều hành",
         "Tôi muốn hỏi về hệ điều hành",
         "Tôi muốn tư vấn về hệ điều hành"
       ],
@@ -273,7 +235,6 @@
       "patterns": [
         "Tôi muốn windows 7",
         "Win 7",
-        "win 7",
         "Windows 7",
         "Tôi chọn windows 7",
         "tôi muốn máy tính windows 7"
@@ -286,7 +247,7 @@
     },
     {
       "tag": "platform_windows_10",
-      "patterns": ["Win 10", "win 10", "Windows 10", "windows 10", "Tôi muốn máy tính windows 10"],
+      "patterns": ["Win 10", "Windows 10", "Tôi muốn máy tính windows 10"],
       "responses": [
         "Những máy tính có sử dụng hệ điều hành windows 10: ",
         "Cửa hàng chúng tôi đang có sẵn những máy tính sử dụng windows 10 là: "
@@ -294,7 +255,7 @@
     },
     {
       "tag": "platform_windows_11",
-      "patterns": ["Win 11", "win 11", "Windows 11", "windows 11", "Tôi muốn máy tính windows 11"],
+      "patterns": ["Win 11", "Windows 11", "Tôi muốn máy tính windows 11"],
       "responses": [
         "Những máy tính có sử dụng hệ điều hành windows 11: ",
         "Cửa hàng chúng tôi đang có sẵn những máy tính sử dụng windows 11 là: "
@@ -307,6 +268,7 @@
         "Tôi muốn Mac_OS",
         "Mac OS",
         "Mac_OS",
+        "macos",
         "Tôi muốn máy tính macos",
         "tôi muốn máy tính apple"
       ],
@@ -321,8 +283,6 @@
         "Tôi muốn máy tính được trang bị chip intel",
         "Tôi muốn máy tính sử dụng chip intel",
         "Chip intel",
-        "intel",
-        "Intel",
         "INTEL",
         "Vi xử lý intel"
       ],
@@ -341,15 +301,15 @@
     },
     {
       "tag": "storage_SSD",
-      "patterns": ["SSD", "ổ cứng SSD", "ssd"],
+      "patterns": ["SSD", "ổ cứng SSD"],
       "responses": [
         "Sau đây là những loại ổ cứng SSD của chúng tôi",
         "Đây là danh sách ổ cứng SSD bán chạy nhất của chúng tôi"
       ]
     },
     {
-      "tag": "storage_HHD",
-      "patterns": ["HHD", "ổ cứng HHD", "hhd"],
+      "tag": "storage_HDD",
+      "patterns": ["HDD", "ổ cứng HDD"],
       "responses": [
         "Sau đây là những loại ổ cứng HHD của chúng tôi",
         "Đây là danh sách ổ cứng HHD bán chạy nhất của chúng tôi"
@@ -363,51 +323,15 @@
       ]
     },
     {
-      "tag": "size_11_12",
-      "patterns": ["11 inches", "12 inches"],
-      "responses": [
-        "Sau đây là những loại máy tính từ 11-12 inches tốt nhất ở cửa hàng chúng tôi:",
-        "Sau đây là những loại máy tính từ 11-12 inches của chúng tôi:",
-        "Những máy tính từ 11-12 inches tốt nhât của cửa hàng chúng tôi: "
-      ]
-    },
-    {
-      "tag": "size_13_14",
-      "patterns": ["13 inches", "14 inches"],
-      "responses": [
-        "Sau đây là những loại máy tính từ 11-12 inches tốt nhất ở cửa hàng chúng tôi:",
-        "Sau đây là những loại 6máy tính từ 11-12 inches của chúng tôi:",
-        "Những máy tính từ 11-12 inches tốt nhât của cửa hàng chúng tôi: "
-      ]
-    },
-    {
-      "tag": "size_15_16",
-      "patterns": ["15 inches", "16 inches"],
-      "responses": [
-        "Sau đây là những loại máy tính từ 15-16 inches tốt nhất ở cửa hàng chúng tôi:",
-        "Sau đây là những loại máy tính từ 15-16 inches của chúng tôi:",
-        "Những máy tính từ 15-16 inches tốt nhât của cửa hàng chúng tôi: "
-      ]
-    },
-    {
-      "tag": "size_17",
-      "patterns": ["17 inches"],
-      "responses": [
-        "Sau đây là những loại máy tính từ 17 inches tốt nhất ở cửa hàng chúng tôi:",
-        "Sau đây là những loại máy tính từ 17 inches của chúng tôi:",
-        "Những máy tính từ 17 inches tốt nhât của cửa hàng chúng tôi: "
-      ]
-    },
-    {
       "tag": "Ram",
-      "patterns": ["Ram", "RAM"],
+      "patterns": ["RAM", "Bộ nhớ trong"],
       "responses": [
         "Dựa theo mục đích sử dụng, chúng tôi chia phân loại ram tùy theo mục đích sử dụng : dưới 4GB, 4GB-8GB, 16-32GB"
       ]
     },
     {
       "tag": "Ram_under_4",
-      "patterns": ["2GB", "Ram 2GB", "2gb", "2Gb"],
+      "patterns": ["2GB", "Ram 2GB"],
       "responses": [
         "Sau đây là danh sách những loại ram dưới 4 GB của cửa hàng chúng tôi: ",
         "Danh sách những loại ram dưới 4 GB của cửa hàng chúng tôi: "
@@ -415,7 +339,7 @@
     },
     {
       "tag": "Ram_4_8",
-      "patterns": ["4GB", "Ram 4GB", "8GB", "Ram 8GB", "4gb", "8gb", "4Gb", "8Gb"],
+      "patterns": ["4GB", "Ram 4GB", "8GB", "Ram 8GB"],
       "responses": [
         "Sau đây là danh sách những loại ram 4-8 GB của cửa hàng chúng tôi: ",
         "Danh sách những loại ram 4-8 GB của cửa hàng chúng tôi: "
@@ -423,7 +347,7 @@
     },
     {
       "tag": "Ram_16_32",
-      "patterns": ["16GB", "Ram 16GB", "32GB", "Ram 32GB", "16gb", "32gb", "16Gb", "32Gb"],
+      "patterns": ["16GB", "Ram 16GB", "32GB", "Ram 32GB"],
       "responses": [
         "Sau đây là danh sách những loại ram 16-32 GB của cửa hàng chúng tôi: ",
         "Danh sách những loại ram 16-32 GB của cửa hàng chúng tôi: "

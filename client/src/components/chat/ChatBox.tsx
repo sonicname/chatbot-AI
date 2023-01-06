@@ -19,7 +19,16 @@ const ChatBox = ({ socket, ref }: IChatBoxProps) => {
   const { elementRef } = useScrollToRef(message);
 
   useEffect(() => {
-    socket.on('response', (res: string) => setMessage({ isBot: true, content: res }));
+    socket.on(
+      'response',
+      ({ response, classify }: { response: string; classify: { tag: string; percent: number } }) =>
+        setMessage({
+          isBot: true,
+          content: response,
+          percent: classify.percent,
+          tag: classify.tag,
+        }),
+    );
   }, [socket]);
 
   return (
@@ -37,7 +46,9 @@ const ChatBox = ({ socket, ref }: IChatBoxProps) => {
         <>
           {message.map((message, index) =>
             message.isBot ? (
-              <Response key={index}>{message.content}</Response>
+              <Response percent={message.percent} tag={message.tag} key={index}>
+                {message.content}
+              </Response>
             ) : (
               <Message key={index}>{message.content}</Message>
             ),
