@@ -7,6 +7,7 @@ import pickle
 
 from underthesea import word_tokenize
 import json
+
 with open('data/intents.json', encoding="utf8") as json_data:
     intents = json.load(json_data)
 
@@ -24,7 +25,7 @@ for intent in intents['intents']:
 
 words = [w.lower() for w in words]
 words = sorted(list(set(words)))
-classes = sorted(list(set(classes)))\
+classes = sorted(list(set(classes)))
 
 training = []
 output = []

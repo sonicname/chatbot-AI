@@ -5,3 +5,4 @@ server/models_save/*
 server/tflearn_logs/*
 server/.idea/AI.iml
 .idea/
+server/__pycache__/

@@ -44,7 +44,8 @@ model.load('models_save/model.tflearn')
 
 def classify_ai(sentence):
     results = model.predict([bow(sentence, words)])[0]
-    results = [[i, r] for i, r in enumerate(results) if r > ERROR_THRESHOLD]
+    results = [[i, r] for i, r in enumerate(results)
+               if r > ERROR_THRESHOLD]
     results.sort(key=lambda x: x[1], reverse=True)
     return_list = []
     for r in results:
@@ -52,16 +53,12 @@ def classify_ai(sentence):
     return return_list
 
 
-def response(sentence, userID='1'):
+def response(sentence):
     results = classify_ai(sentence)
     if results:
         while results:
             for i in intents['intents']:
                 if i['tag'] == results[0][0]:
-                    if 'context_set' in i:
-                        context[userID] = i['context_set']
-                    if not 'context_filter' in i or \
-                            (userID in context and 'context_filter' in i and i['context_filter'] == context[userID]):
-                        return random.choice(i['responses'])
+                    return random.choice(i['responses'])
 
             results.pop(0)
